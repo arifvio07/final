@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-top: 64px;
+    padding-bottom: 54px;
+}
+
+nav {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background: #121212;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 5px black;
+    z-index: 10;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+.nav-menu ul li a {
+    margin: 20px;
+    font-weight: 500;
+    width: 150px;
+    text-align: right;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav li {
+    list-style: none;
+}
+
+.logo-bar a {
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-menu ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+    color:#00d0ff;
+}
+
+.slider-img {
+    width:100%;
+    height: 500px;
+}
+
+.content {
+    text-align: center;
+}
+.content img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.text-content {
+    margin: 50px 20px 10px 20px;
+    text-align: center;
+}
+
+.text-content h1 {
+    font-weight: 900;
+    color: black;
+}
+
+.text-content button {
+    background: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.title-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 20px 0;
+    padding: 20px;
+}
+
+.title-new h3 {
+    font-weight: 900;
+    border-bottom: 2px solid black;
+}
+
+.new-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 60px;
+}
+
+.new-container img {
+    width: 300px;
+    height: 320px;
+    border-radius: 30px;
+}
+.new-content:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.new-content {
+    margin: 0 20px 0;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.new-content .new-info h6 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer h5 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color:#00d0ff;
+}
+
+footer .list-inline {
+    padding-left: 0;
+}
+
+footer .list-inline-item {
+    margin-right: 10px;
+}
+
+footer ul li a {
+    position: relative;
+}
+
+footer ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00d0ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+footer ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.sticky-bar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+  }
+  .sticky-bar button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #close-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: auto;
+  }
+
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-mode-toggle{
+    width: 50px;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+}
+.dark-mode .dark-mode-toggle  {
+    background: #121212;
+    color: #ffffff;
+}
+
+.dark-mode nav {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.dark-mode .nav-menu ul li a {
+    color: #121212;
+}
+
+.dark-mode .nav-menu ul li a:hover {
+    border-bottom: 2px solid #121212;
+    color: #00d0ff; 
+}
+
+.dark-mode .logo-bar a {
+    color: #121212;
+}
+
+.dark-mode .content p {
+    color: #ffffff;
+}
+
+.dark-mode .text-content h1 {
+    color: #ffffff;
+}
+
+.dark-mode .text-content button {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.dark-mode .title-new h3 {
+    color: #ffffff;
+}
+
+.dark-mode .new-content {
+    background-color: #212121;
+    border: 1px solid #ffffff;
+}
+
+.dark-mode .new-content .new-info h6 {
+    color: #ffffff;
+}
+
+.dark-mode footer {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode footer ul li a {
+    color: black;
+}
+
+.dark-mode footer ul li a:hover {
+    color: #00d0ff;
+}
+
+.dark-mode footer h5 {
+    color: #ffffff;
+}
+
+.dark-mode footer ul li a::before {
+    background-color:#00d0ff;
+}
+.dark-mode .promo-title {
+    background: #ffffff;
+    color: black;
+    font-weight: 600;
+}
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+.nav {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu ul li a {
+    transition: color 0.5s;
+}
+
+.text-content button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.new-content {
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+footer ul li a {
+    transition: color 0.3s;
+}
+
+.promo-title {
+    background: black;
+    color: #fff;
+    font-weight: 600;
+}
+
+.slider {
+    margin-top: 100px;
+}
+
+.img-product {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+}
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .btn-submit {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #00d0ff;
+    color: #ffffff;
+    transition: background-color 0.5s ;
+  }
+
+  .dark-mode .btn-submit {
+    background-color: #ffffff;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .dark-mode .btn-submit:hover {
+    background-color: #00d0ff;
+    color: #ffffff;
+    transition: background-color 0.5s ;
+  }
+  
+  
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-menu ul li a {
+        margin: 10px;
+        font-size: 14px;
+        width: auto;
+    }
+
+    .logo-bar a {
+        font-size: 16px;
+    }
+
+    .content p {
+        padding: 30px 0 0 0;
+    }
+
+    .text-content {
+        margin: 30px 10px 10px 10px;
+    }
+
+    .title-new {
+        margin: 30px 0 10px 0;
+    }
+
+    .new-container {
+        margin: 30px 10px;
+    }
+    .new-container img:hover {
+        transform: none; 
+    }
+    footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+    .contact {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-menu ul li a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .logo-bar a {
+        font-size: 14px;
+    }
+
+    .content p {
+        padding: 20px 0 0 0;
+    }
+
+    .text-content {
+        margin: 20px 5px 5px 5px;
+    }
+
+    .title-new {
+        margin: 20px 0 5px 0;
+    }
+
+    .new-container {
+        margin: 20px 5px;
+    }
+    .new-container img:hover {
+        transform: none;
+    }
+    .btn-submit{
+        width: 100%;
+    }
+}
